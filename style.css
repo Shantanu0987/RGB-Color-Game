@@ -47,9 +47,11 @@ footer {
   position: relative;
   bottom: 50px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 300px;
   }
 }
