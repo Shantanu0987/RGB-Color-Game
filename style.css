@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  cursor: grab;
+  border-radius: 10px;
+  border: 5px solid;
+}
+.box:active {
+  cursor: grabbing;
+}
+body {
+  width: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 560px; /* 3 boxes x 100px + 2 x 20px gap */
+  margin: 100px auto;
+  justify-items: center;
+}
+.score {
+  font-size: 50px;
+}
+#RGB {
+  font-size: 50px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  position: relative;
+  top: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  bottom: 50px;
+}
